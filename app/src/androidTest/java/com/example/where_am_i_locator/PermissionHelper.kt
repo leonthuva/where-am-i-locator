@@ -23,4 +23,13 @@ object PermissionHelper {
             LOCATION_PERMISSION_REQUEST_CODE
         )
     }
+
+    fun isPermissionResultGranted(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ): Boolean {
+        return requestCode == LOCATION_PERMISSION_REQUEST_CODE &&
+                grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED
+    }
 }
