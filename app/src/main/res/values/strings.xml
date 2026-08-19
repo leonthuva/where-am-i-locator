@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Where_Am_I_locator</string>
+    <string name="latitude_label">Latitude: %1$s</string>
+    <string name="longitude_label">Longitude: %1$s</string>
+    <string name="accuracy_label">Accuracy: %1$s meters</string>
+    <string name="timestamp_label">Time: %1$s</string>
+    <string name="location_failure">Couldn\'t get location: %1$s</string>
+    <string name="permission_required">Location permission is required to use this feature.</string>
 </resources>
